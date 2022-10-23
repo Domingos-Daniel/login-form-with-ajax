@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>Safeq</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">   
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="assets/signup-form.css" type="text/css" />    
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+      
+    
+<body onload="play_game()">
+
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+  
+  <!-- Image header -->
+ 
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l12 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        
+          <div class="container">
+
+    <div class="signup-form-container">
+    
+         <!-- form start -->
+         <form method="post" role="form" id="register-form" autocomplete="off">
+         
+         <div class="form-header">
+         	<h2 class="form-title" style="font-size: 2.4rem;"><span class="glyphicon glyphicon-user"></span> Inscrição no Safeq</h2>
+                      
+         
+                      
+         </div>
+                  
+         <div class="form-body">
+         
+         	  <!-- json response will be here -->
+              <div id="errorDiv"></div>
+              <!-- json response will be here -->
+                      
+         	  <div class="form-group">
+                   <div class="input-group">
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                   <input name="name" type="text" id="name" class="form-control" placeholder="Nome" maxlength="80" autofocus="true" required>
+                   </div>
+                   <span class="help-block" id="error"></span>
+              </div>
+                        
+              <div class="form-group">
+                   <div class="input-group">
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                   <input name="email" id="email" type="email" class="form-control" placeholder="Email" maxlength="70" required>
+                   </div> 
+                   <span class="help-block" id="error"></span>               
+              </div>
+
+              <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                    <input name="tel" id="tel" type="number" class="form-control" placeholder="Telemovel" minlength="9" required>
+                    </div> 
+                    <span class="help-block" id="error"></span>                     
+              </div>
+
+              <div class="input-field">
+               <div class="form-group">
+               <div class="input-field">
+                   <select class="" id="curso" name="curso" style="text-transform: uppercase;" required>
+                   <option value="" selected="" disabled="">Curso</option>
+                   <option>curso 1</option>
+                   <option>curso 2</option>
+                   <option>curso 3</option>
+                   <option>curso 4</option>
+                   </select>
+                   </div>
+                 </div>
+               
+           </div>
+
+           <div class="input-field">
+               Genero
+               <div class="main">
+                   <div class="form-check">
+                       <label class="form-check-label">
+                         <input type="radio" id="m" class="form-check-input" name="genero" value="M">M
+                       </label>
+                     </div>
+                     <div class="form-check">
+                       <label class="form-check-label">
+                         <input type="radio" id="f" class="form-check-input" name="genero" value="F">F
+                       </label>
+                     </div>
+               </div>
+               
+           </div>
+                        
+          
+            <div class="checkbox-text" style="margin-top:30px">
+               <div class="checkbox-content">
+                   <input type="checkbox" id="termCon">
+                   <label style="margin-top:10px" for="termCon" class="text" required>Eu aceito todas as condições, enviando minhas informações pessoais</label>
+               </div>
+           </div>
+            
+            <div class="form-footer">
+                 <button type="submit" class="btn btn-info" id="btn-signup" style="color: #fff; background-color: #1d91d0;">
+                 SUBMIT
+                 </button>
+            </div>
+
+
+            </form>
+            
+           </div>
+
+	</div>
+
+          
+            
+      </div>
+      
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+    
+    <script src="assets/jquery-1.12.4-jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/jquery.validate.min.js"></script>
+    <script src="assets/register.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

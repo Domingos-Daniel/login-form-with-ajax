@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #154bab;
+}
+
+.signup-form-container {
+	
+	border-radius: 15px;
+    background: #ffffff;
+    margin: 4% auto;
+    max-width: 620px !important;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7) !important;
+	padding: 20px;
+}
+
+
+.input-field select{
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.form-header{
+	
+	color:#444;
+	display:block;
+	padding:20px;
+	position:relative;
+	border-bottom:1px solid #f4f4f4;
+}
+
+.form-header .form-title {
+	display:inline-block;
+	font-size:18px;
+	margin:0;
+	line-height:1
+}
+
+.form-body {
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
+	padding:20px;
+}
+
+.form-footer {
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
+	border-top:1px solid #f4f4f4;
+	padding:20px;
+	background-color:#fff
+}
+
+.form-control{
+	
+	font-size: 16px;
+    height: auto;
+    padding: 7px 9px;
+}
+.form-group #error{
+	color:#a94442;
+}
+
+.glyphicon {
+    color: #12394e !important;
+}
+
+.alert-info {
+   
+    background-color: rgba(29, 145, 208, 0.58) !important;
+    
+}
